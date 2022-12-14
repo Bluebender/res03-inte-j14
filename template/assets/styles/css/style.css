@@ -161,6 +161,10 @@ table {
 }
 
 body > header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
   grid-template-rows: 10vh;
@@ -189,11 +193,29 @@ body > header > nav > ul > li {
 body > header > nav > ul > li > a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: black;
+}
+@media (prefers-color-scheme: light) {
+  body > header > nav > ul > li > a {
+    color: #242523;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body > header > nav > ul > li > a {
+    color: #ffffff;
+  }
 }
 body > header > nav > ul > li:hover {
   transform: translateY(-4px);
-  border-bottom: 4px solid black;
+}
+@media (prefers-color-scheme: light) {
+  body > header > nav > ul > li:hover {
+    border-bottom: 4px solid #242523;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body > header > nav > ul > li:hover {
+    border-bottom: 4px solid #ffffff;
+  }
 }
 body > header > ul {
   grid-column: 6/7;
@@ -204,13 +226,62 @@ body > header > ul {
 body > header > ul > li > a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: black;
+}
+@media (prefers-color-scheme: light) {
+  body > header > ul > li > a {
+    color: #242523;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body > header > ul > li > a {
+    color: #ffffff;
+  }
 }
 body > header > ul > li:hover {
   transform: translateY(-4px);
 }
 body > header > ul > li:hover > a {
   color: grey;
+}
+
+body > footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
+  grid-template-rows: 10vh;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > footer > h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+@media (prefers-color-scheme: light) {
+  body > footer > h2 {
+    color: #242523;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body > footer > h2 {
+    color: #ffffff;
+  }
+}
+body > footer > p {
+  font-size: 1rem;
+  margin: 10px 0 20px 0;
+}
+@media (prefers-color-scheme: light) {
+  body > footer > p {
+    color: #242523;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body > footer > p {
+    color: #ffffff;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -226,6 +297,18 @@ body > header > ul > li:hover > a {
 
 .hidden {
   display: none;
+}
+
+body > main > p {
+  margin: 300px;
+}
+
+body > main > button {
+  margin: 300px;
+}
+
+body > main > a {
+  margin: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

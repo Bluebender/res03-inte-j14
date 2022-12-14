@@ -2,6 +2,7 @@
 @import "vars.scss";
 @import "buttons.scss";
 @import "header.scss";
+@import "footer.scss";
 
 // a{
 //     Color: red;
@@ -19,4 +20,14 @@ body{
 
 .hidden{
   display: none;
+}
+
+body > main > p{
+  margin: 300px;
+}
+body > main > button{
+  margin: 300px;
+}
+body > main > a{
+  margin: 300px;
 }

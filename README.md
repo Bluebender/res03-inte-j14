@@ -138,6 +138,7 @@ body{
 ```
 ```css
 body > header{
+    background-color: rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
     grid-template-rows: 10vh;
@@ -162,11 +163,21 @@ body > header{
                 > a{
                     font-size: 1.4rem;
                     text-decoration: none;
-                    color: black;
+                    @media (prefers-color-scheme: light){
+                        color: $black;
+                    }
+                    @media (prefers-color-scheme: dark){
+                        color: $white;
+                    }
                 }
                 &:hover{
                     transform: translateY(-4px);
-                    border-bottom: 4px solid black;
+                    @media (prefers-color-scheme: light){
+                        border-bottom: 4px solid $black;
+                    }
+                    @media (prefers-color-scheme: dark){
+                        border-bottom: 4px solid $white;
+                    }
                 }
             }
         }
@@ -180,7 +191,12 @@ body > header{
             > a{
                 font-size: 1.4rem;
                 text-decoration: none;
-                color: black;
+                @media (prefers-color-scheme: light){
+                    color: $black;
+                }
+                @media (prefers-color-scheme: dark){
+                    color: $white;
+                }
             }
             &:hover{
                 transform: translateY(-4px);
@@ -188,6 +204,47 @@ body > header{
                     color: grey;
                 }
             }
+        }
+    }
+}
+```
+## Footer
+```html
+<footer>
+    <h2>Mon site</h2>
+    <p>Bla bla aojore orgr i  bps fopd$ ifp jbf$pdz jbpjie jif </p>
+</footer>
+
+```
+```css
+body > footer{
+    background-color: rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
+    grid-template-rows: 10vh;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > h2{
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 20px 0 10px 0;
+        @media (prefers-color-scheme: light){
+            color: $black;
+        }
+        @media (prefers-color-scheme: dark){
+            color: $white;
+        }
+    }
+    > p{
+        font-size: 1rem;
+        margin: 10px 0 20px 0;
+        @media (prefers-color-scheme: light){
+            color: $black;
+        }
+        @media (prefers-color-scheme: dark){
+            color: $white;
         }
     }
 }
