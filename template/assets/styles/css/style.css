@@ -327,16 +327,8 @@ body > footer > p {
   display: none;
 }
 
-body > main > p {
-  margin: 300px;
-}
-
-body > main > button {
-  margin: 300px;
-}
-
-body > main > a {
-  margin: 300px;
+body > main > section {
+  margin: 200px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
