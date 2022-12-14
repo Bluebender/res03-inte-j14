@@ -111,3 +111,85 @@ body{
     }
 }
 ```
+## Header
+```html
+<script src="https://kit.fontawesome.com/dbf8b52bf4.js" crossorigin="anonymous"></script>
+
+<header>
+    <figure>
+        <img src="assets/images/logo.jpg" alt="logo"/>
+    </figure>
+    <nav>
+        <h2 class="hidden">Menu de navigation</h2>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Photos</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li><a href=""><span class="fa-brands fa-facebook-f" alt="facebook"></span></a></li>
+        <li><a href=""><span class="fa-brands fa-twitter"></span></a></li>
+        <li><a href=""><span class="fa-brands fa-instagram"></span></a></li>
+        <li><a href=""><span class="fa-solid fa-basketball"></span></a></li>
+    </ul>
+</header>
+```
+```css
+body > header{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
+    grid-template-rows: 10vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    > figure{
+        grid-column: 2 / 3;
+        height: 100%;
+        > img{
+            height: 100%;
+        }
+    }
+    > nav{
+        grid-column: 4 / 5;
+        display: flex;
+        > ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > li{
+                padding: 5px 0;
+                > a{
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover{
+                    transform: translateY(-4px);
+                    border-bottom: 4px solid black;
+                }
+            }
+        }
+    }
+    > ul{
+        grid-column: 6 / 7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > li{
+            > a{
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: black;
+            }
+            &:hover{
+                transform: translateY(-4px);
+                > a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+```
