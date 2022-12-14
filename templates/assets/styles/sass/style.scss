@@ -3,10 +3,10 @@
 @import "buttons.scss";
 @import "header.scss";
 
-a{
-    Color: red;
-    text-decoration: none;
-}
+// a{
+//     Color: red;
+//     text-decoration: none;
+// }
 
 body{
   @media (prefers-color-scheme: light){
@@ -15,4 +15,8 @@ body{
   @media (prefers-color-scheme: dark){
     background-color: $black;
   }
+}
+
+.hidden{
+  display: none;
 }
