@@ -284,6 +284,34 @@ body > footer > p {
   }
 }
 
+.article {
+  width: 20vw;
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 0.2fr;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 50px;
+}
+.article > header > figure {
+  width: 100%;
+}
+.article > header > figure > img {
+  width: 100%;
+}
+.article > section > h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.article > section > p {
+  font-size: 1.2rem;
+}
+.article > footer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: #ffffff;

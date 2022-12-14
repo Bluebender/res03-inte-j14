@@ -249,3 +249,54 @@ body > footer{
     }
 }
 ```
+## Article
+```html
+<article class="article">
+    <h2 class="hidden">Article</h2>
+    <header>
+        <figure>
+            <img src="https://picsum.photos/seed/picsum/500/300"/>
+        </figure>
+    </header>
+    <section>
+        <h3>Titre de mon article</h3>
+        <p>Résumé de l'article qui explique en quoi consiste l'article et peut être même que ça peut être le début de l'article qui est coupé si celui ci est trop long car il y aurait trop de mots.</p>
+    </section>
+    <footer>
+        <a class="btn-orange" href="">Lire l'article</a>
+    </footer>
+</article>
+```
+```css
+.article{
+    width: 20vw;
+    display: grid;
+    grid-template-rows: 1fr 0.8fr 0.2fr;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px;
+    > header{
+        > figure{
+            width: 100%;
+            > img{
+                width: 100%;
+            }
+        }
+    }
+    > section{
+        > h3{
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        > p{
+            font-size: 1.2rem;
+        }
+    }
+    > footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+```
