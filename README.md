@@ -138,7 +138,6 @@ body{
 ```
 ```css
 body > header{
-    background-color: grey;
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
     grid-template-rows: 10vh;
@@ -186,7 +185,7 @@ body > header{
             &:hover{
                 transform: translateY(-4px);
                 > a{
-                    color: white;
+                    color: grey;
                 }
             }
         }
