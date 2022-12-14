@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.btn-blue {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  .btn-blue {
+    background-color: #2d71e3;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .btn-blue {
+    background-color: #1499e7;
+  }
+}
+.btn-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-red {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  .btn-red {
+    background-color: #ba0534;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .btn-red {
+    background-color: #fe4c54;
+  }
+}
+.btn-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-green {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  .btn-green {
+    background-color: #106942;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .btn-green {
+    background-color: #3ee8a5;
+  }
+}
+.btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-orange {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: light) {
+  .btn-orange {
+    background-color: #d73b07;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .btn-orange {
+    background-color: #fd790f;
+  }
+}
+.btn-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body > header {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.8fr 0.4fr 0.2fr 0.1fr;
+  grid-template-rows: 10vh;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+body > header > figure {
+  grid-column: 2/3;
+  height: 100%;
+}
+body > header > figure > img {
+  height: 100%;
+}
+body > header > nav {
+  grid-column: 4/5;
+  display: flex;
+}
+body > header > nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body > header > nav > ul > li {
+  padding: 5px 0;
+}
+body > header > nav > ul > li > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+body > header > nav > ul > li:hover {
+  transform: translateY(-4px);
+  border-bottom: 4px solid black;
+}
+body > header > ul {
+  grid-column: 6/7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body > header > ul > li > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+body > header > ul > li:hover {
+  transform: translateY(-4px);
+}
+body > header > ul > li:hover > a {
+  color: grey;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #242523;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
