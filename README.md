@@ -6,6 +6,8 @@
 .btn-blue{
   background-color: $lightThemeBlue;
   border-radius: 20px;
+  
+  
   border: none;
   color: white;
   text-align: center;
