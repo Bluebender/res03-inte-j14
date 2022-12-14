@@ -1,9 +1,18 @@
 @import "reset.scss";
 @import "vars.scss";
 @import "buttons.scss";
+@import "header.scss";
 
 a{
     Color: red;
     text-decoration: none;
 }
 
+body{
+  @media (prefers-color-scheme: light){
+    background-color: $white;
+  }
+  @media (prefers-color-scheme: dark){
+    background-color: $black;
+  }
+}

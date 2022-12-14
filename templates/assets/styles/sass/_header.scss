@@ -1,0 +1,23 @@
+body > header{
+    background-color: grey;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    > figure{
+        max-height: 100%;
+        max-width: 100%;
+        > img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    > ul{
+        > li{
+            display: inline;
+            > a{
+                
+            }
+        }
+    }
+}
